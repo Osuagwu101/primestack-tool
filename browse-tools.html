@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse all 132 PrimeStack Tools across AI, SEO, design, writing, video and learning." />
+  <title>Browse Tools — PrimeStack Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="browse">
+  <div class="announcement">132 premium tools · 6 categories · straightforward Naira pricing.</div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="PrimeStack Tools home">
+        <span class="brand-mark">P</span>
+        <span>PrimeStack <strong>Tools</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="browse-tools.html">Browse Tools</a>
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-small btn-outline" href="#toolLibrary">Explore Tools</a>
+      <button class="menu-btn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="browse-hero">
+      <div class="container browse-hero-inner">
+        <span class="eyebrow">THE COMPLETE LIBRARY</span>
+        <h1>Browse 132 premium tools</h1>
+        <p>Search and filter professional software for AI creation, SEO research, design, writing, video production and learning—all displayed with Naira pricing.</p>
+        <div class="browse-stats">
+          <span><b>132</b> Tools</span>
+          <span><b>6</b> Categories</span>
+          <span><b>₦5,000</b> Standard monthly listing</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalogue-section" id="toolLibrary">
+      <div class="container">
+        <div class="catalogue-toolbar">
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="toolSearch" type="search" placeholder="Search tools by name…" autocomplete="off" />
+          </label>
+          <div class="filter-row" id="categoryFilters">
+            <button class="filter-btn active" data-category="All">All Tools <span>132</span></button>
+            <button class="filter-btn" data-category="AI Creator">AI Creator <span>18</span></button>
+            <button class="filter-btn" data-category="SEO & Research">SEO & Research <span>33</span></button>
+            <button class="filter-btn" data-category="Design & Stock">Design & Stock <span>28</span></button>
+            <button class="filter-btn" data-category="AI Writing">AI Writing <span>28</span></button>
+            <button class="filter-btn" data-category="Video & Media">Video & Media <span>15</span></button>
+            <button class="filter-btn" data-category="Learning">Learning <span>10</span></button>
+          </div>
+        </div>
+
+        <div class="results-meta">
+          <div><strong id="resultCount">132</strong> tools found</div>
+          <div class="pricing-note">Published reference prices are matched where available; all other listings use ₦5,000/month.</div>
+        </div>
+
+        <div id="allTools" class="tool-grid catalogue-grid"></div>
+
+        <div id="emptyState" class="empty-state" hidden>
+          <span>⌕</span>
+          <h3>No tools found</h3>
+          <p>Try another name or clear your category filter.</p>
+          <button id="clearFilters" class="btn btn-primary">Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalogue-cta">
+      <div class="container">
+        <div class="catalogue-cta-inner">
+          <div>
+            <span class="eyebrow">YOUR STACK, YOUR CHOICE</span>
+            <h2>Build around the tools you actually use.</h2>
+            <p>Compare the catalogue and put together a workflow that fits your work and your budget.</p>
+          </div>
+          <a class="btn btn-light" href="index.html">Back to home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">P</span><span>PrimeStack <strong>Tools</strong></span></a>
+        <p>Premium AI, SEO, writing, design, video and learning tools with straightforward Naira pricing.</p>
+      </div>
+      <div><h4>Platform</h4><a href="browse-tools.html">Browse Tools</a><a href="index.html#categories">Categories</a><a href="index.html#how-it-works">How It Works</a></div>
+      <div><h4>Support</h4><a href="index.html#faq">FAQ</a><a href="#">Contact</a><a href="#">Help Centre</a></div>
+      <div><h4>Legal</h4><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Refund Policy</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 PrimeStack Tools. All rights reserved.</span>
+      <span>Independent service · Third-party trademarks belong to their respective owners.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
